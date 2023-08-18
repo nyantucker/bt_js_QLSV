@@ -67,6 +67,9 @@ function updateSV() {
     document.getElementById('txtMaSV').disabled = false
     document.getElementById('add-sv').disabled = false
     document.getElementById('reset-sv').disabled = false
+
+    var jsonData = JSON.stringify(dssv)
+    localStorage.setItem("DSSV",jsonData)
     renderDssv(dssv)
 }
 
